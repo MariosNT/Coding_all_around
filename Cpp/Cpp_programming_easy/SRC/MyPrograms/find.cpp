@@ -1,0 +1,33 @@
+//=============================================
+// C++ Programming in easy steps 7ed. [4:74-75]
+//=============================================
+
+#include <string>
+#include <iostream>
+using namespace std ;
+
+int main()
+{
+  string text = "I can resist anything but temptation." ;
+  int num ;
+
+  num = text.find( "resist" , 0 ) ;
+  cout << "\n\"resist\" result:" << num << endl ; 
+
+  num = text.find( "absent" , 0 ) ;
+  cout << "\"absent\" result:" << num << endl ;
+
+  num = text.find_first_of( "If" ) ;
+  cout << "\nFirst I:\t" << num << endl ;
+
+  num = text.find_first_not_of( "If" ) ;
+  cout << "First not I:\t" << num << endl ;
+
+  num = text.find_last_of( "n" ) ;
+  cout << "\nLast n:\t\t" << num << endl ;
+
+  num = text.find_last_not_of( "n" ) ;
+  cout << "Last not n:\t" << num << endl ;
+
+  return 0 ;
+}
